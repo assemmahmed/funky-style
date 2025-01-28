@@ -10,7 +10,7 @@ import "./Navigation.scss";
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
-  const { isCartOpen } = useContext(CartContext)
+  const { isCartOpen } = useContext(CartContext);
 
   return (
     <Fragment>
@@ -24,8 +24,8 @@ const Navigation = () => {
           </Link>
           {currentUser ? (
             <span className="nav-link" onClick={signOutUser}>
-              {' '}
-              SIGN OUT{' '}
+              {" "}
+              SIGN OUT{" "}
             </span>
           ) : (
             <Link className="nav-link" to="/auth">
